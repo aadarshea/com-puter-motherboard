@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PC Components & Gaming Hardware</title>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f5f5f5;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      background-color: #0d1b2a;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
+    .nav-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .nav-list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .nav-item {
+      color: #e0e0e0;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 20px 12px;
+      transition: all 0.25s ease;
+      position: relative;
+    }
+
+    .nav-item:hover {
+      color: white;
+    }
+
+    .nav-item.active {
+      color: #00d4ff;
+    }
+
+    .nav-item.active::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 12px;
+      right: 12px;
+      height: 3px;
+      background-color: #00d4ff;
+      border-radius: 3px 3px 0 0;
+    }
+
+    .contact-btn {
+      background-color: #00d4ff;
+      color: #0d1b2a !important;
+      font-weight: 600;
+      padding: 12px 24px !important;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    .contact-btn:hover {
+      background-color: #00b7e0;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(0, 212, 255, 0.3);
+    }
+
+    /* Hero / Intro Section */
+    .hero {
+      background: linear-gradient(rgba(13, 27, 42, 0.75), rgba(13, 27, 42, 0.85)),
+                  url('https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&q=80&w=2000') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 140px 20px 100px;
+    }
+
+    .hero h1 {
+      font-size: 3.2rem;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      max-width: 700px;
+      margin: 0 auto 32px;
+      opacity: 0.95;
+    }
+
+    /* Brands Section */
+    .brands-section {
+      background: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .brands-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .brand-logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 60px;
+      margin: 50px 0;
+    }
+
+    .brand-logos img {
+      height: 80px;
+      width: auto;
+      filter: grayscale(60%);
+      transition: all 0.4s ease;
+    }
+
+    .brand-logos img:hover {
+      filter: grayscale(0%);
+      transform: scale(1.12);
+    }
+
+    .highlights {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    .highlight-item {
+      max-width: 320px;
+    }
+
+    .highlight-item h3 {
+      color: #00d4ff;
+      margin-bottom: 12px;
+      font-size: 1.4rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.4rem; }
+      .hero { padding: 100px 20px 80px; }
+      .nav-list { flex-direction: column; padding: 16px 0; }
+      .nav-left { flex-direction: column; gap: 8px; }
+      .brand-logos img { height: 60px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <ul class="nav-list">
+        <div class="nav-left">
+          <a href="#technology" class="nav-item active">Technology</a>
+          <a href="#components" class="nav-item">Components</a>
+          <a href="#brands" class="nav-item">Brands</a>
+          <a href="#resources" class="nav-item">Resources</a>
+          <a href="#about" class="nav-item">About</a>
+        </div>
+        <a href="mailto:ghimireaadarsha0@gmail.com?subject=Website%20Inquiry&body=Hello%20team,%0D%0A%0D%0AI'm%20interested%20in...%0D%0A%0D%0ABest%20regards,%0D%0A[Your%20Name]" 
+           class="nav-item contact-btn">Contact Us</a>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Next-Level Gaming & Workstation Hardware</h1>
+    <p>Explore premium motherboards, components and builds trusted by enthusiasts in 2025–2026</p>
+  </section>
+
+  <!-- Brands Section -->
+  <section class="brands-section" id="brands">
+    <div class="brands-container">
+      <h2>Trusted Premium Brands</h2>
+      
+      <div class="brand-logos">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/ASUS_Logo.svg" alt="ASUS">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/MSI_Logo.svg" alt="MSI">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/GIGABYTE_logo.svg" alt="GIGABYTE">
+      </div>
+
+      <div class="highlights">
+        <div class="highlight-item">
+          <h3>ASUS</h3>
+          <p>Top Gaming & Workstation Boards</p>
+        </div>
+        <div class="highlight-item">
+          <h3>MSI</h3>
+          <p>4.8 Star Rating – Excellent build quality</p>
+        </div>
+        <div class="highlight-item">
+          <h3>GIGABYTE AORUS</h3>
+          <p>Leader in the AORUS Series</p>
+        </div>
+        <div class="highlight-item">
+          <h3>Tom's Hardware</h3>
+          <p>Highly Recommended 2025–2026</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript: Active menu highlight -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const links = document.querySelectorAll('.nav-item:not(.contact-btn)');
+      
+      links.forEach(link => {
+        link.addEventListener('click', function(e) {
+          // Remove active from all
+          links.forEach(l => l.classList.remove('active'));
+          // Add to current
+          this.classList.add('active');
+          
+          // Optional: smooth scroll if using # anchors on same page
+          // const targetId = this.getAttribute('href');
+          // if (targetId.startsWith('#')) {
+          //   e.preventDefault();
+          //   document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
+          // }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
